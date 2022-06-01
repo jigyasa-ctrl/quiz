@@ -14,13 +14,16 @@ function App() {
   const [questionsQuiz2, setQuestionsQuiz2] = useState([])
   return (
     <div className="App">
+      <span>SCOREBOARD: quiz 1 - {score1} | quiz 2 - {score2}</span>
       <div className="quiz">
+
+
         <Quiz timer={timer1} setTimer={setTimer1} score={score1} setScore={setScore1} start={start1} setStart={setStart1} questionsQuiz={questionsQuiz1} setQuestionsQuiz={setQuestionsQuiz1} />
         <Quiz timer={timer2} setTimer={setTimer2} score={score2} setScore={setScore2} start={start2} setStart={setStart2} questionsQuiz={questionsQuiz2} setQuestionsQuiz={setQuestionsQuiz2} />
       </div>
 
 
-    </div>
+    </div >
   );
 }
 
